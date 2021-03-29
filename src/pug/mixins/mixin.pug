@@ -34,10 +34,11 @@ mixin webpResp(classname, path, type, name, width)
 		source(type="image/webp" srcset="static/img/"+path+"-"+imageSizes[lastBrekpoint]+".webp 1x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 2 +".webp 2x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 3+".webp 3x" media="(min-width: 0px)")
 		img(class=classname, srcset="static/img/"+path+"-"+imageSizes[lastBrekpoint]+"."+type+" 1x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 2+"."+type+" 2x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 3+"."+type+" 3x" src="static/img/"+path+"-"+imageSizes[lastBrekpoint]+"."+type loading="lazy" alt=name)
 
+-var links = ['works', 'blog', 'article']
 mixin menu(classname, items)
 	nav(class=classname)
 		ul(class=classname+'__list')
 			each item, index in items
 				li(class=classname+'__item')
-					a(class=classname+'__link' href="#")= item
+					a(class=classname+'__link' href="/"+links[index]+".html")= item
 				

@@ -1,0 +1,32 @@
+$headerWrapper: 1032
+
+.header
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 100%
+		z-index: 0
+		right: 0
+		background-color: rgba($lightGrey, .3)
+		+smooth
+	&.active
+		&::before
+			left: 0
+			
+	&__wrapper
+		max-width: $headerWrapper+px
+		margin: 0 auto
+		height: 100%
+		+r($headerWrapper)
+			padding: 0 $wrapperPadding+px
+	&__body
+		+flex(flex-end)
+		padding: 30px 0
+
+		+phone
+			padding: 20px 0
+

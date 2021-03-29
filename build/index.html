@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="desrc">
+    <title>Document</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header menu-box">
+        <div class="header__wrapper">
+          <div class="header__body">
+            <div class="burger"><span class="burger__decor"></span></div>
+            <div class="header__menu">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="/works.html">Work</a></li>
+                  <li class="menu__item"><a class="menu__link" href="/blog.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="/article.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="hello">
+          <div class="wrapper">
+            <div class="hello__body">
+              <div class="hello__content">
+                <h1 class="hello__title title">Hi, i am John, <br>Creative Technologist</h1>
+                <p class="hello__text text">Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Sunt eum, asperiores suscipit distinctio nihil cumque et pariatur laborum quas explicabo ea iure quis sit natus.</p><a class="hello__button button" href="#">Download Resume</a>
+              </div>
+              <div class="hello__avatar avatar">
+                <picture>
+                  <source srcset="static/img/kanye.webp" type="image/webp"/><img class="avatar__pic" src="static/img/kanye.jpg" alt="my avatar" loading="lazy"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="recent-posts">
+          <div class="wrapper">
+            <div class="recent-posts__body">
+              <div class="recent-posts__header">
+                <div class="recent-posts__title title-posts">Recent posts</div><a class="recent-posts__all" href="#">View all</a>
+              </div>
+              <div class="recent-posts__items">
+                <div class="recent-posts__column">
+                  <article class="recent-posts__item recent-post"><a class="recent-post__title" href="#">Making a desing system from scratch</a>
+                    <div class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</div>
+                    <div class="recent-post__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi unde eos dolores nisi dolore tempore obcaecati nam dolorum iusto consectetur.</div>
+                  </article>
+                </div>
+                <div class="recent-posts__column">
+                  <article class="recent-posts__item recent-post"><a class="recent-post__title" href="#">Making a desing system from scratch</a>
+                    <div class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</div>
+                    <div class="recent-post__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi unde eos dolores nisi dolore tempore obcaecati nam dolorum iusto consectetur.</div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featured">
+          <div class="wrapper">
+            <div class="featured__body">
+              <div class="featured__title title-posts">Featured works</div>
+              <div class="featured__items works">
+                <article class="works__item"><a class="works__img" href="#">
+                    <picture>
+                      <source srcset="static/img/work-1.webp" type="image/webp"/><img class="works__pic" src="static/img/work-1.jpg" alt="work" loading="lazy"/>
+                    </picture></a>
+                  <div class="works__body"><a class="works__title" href="#">Designing Dashboards</a>
+                    <div class="works__info"><a class="works__year" href="#">2020</a><a class="works__category" href="#">Dashboard</a></div>
+                    <div class="works__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad architecto quis minus corporis, fugit sapiente vel quidem. Explicabo minus, eaque nisi? Magnam eligendi, asperiores illo id ex, quam. Perferendis, voluptate? </div>
+                  </div>
+                </article>
+                <article class="works__item"><a class="works__img" href="#">
+                    <picture>
+                      <source srcset="static/img/work-2.webp" type="image/webp"/><img class="works__pic" src="static/img/work-2.jpg" alt="work" loading="lazy"/>
+                    </picture></a>
+                  <div class="works__body"><a class="works__title" href="#">Designing Dashboards</a>
+                    <div class="works__info"><a class="works__year" href="#">2020</a><a class="works__category" href="#">Dashboard</a></div>
+                    <div class="works__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad architecto quis minus corporis, fugit sapiente vel quidem. Explicabo minus, eaque nisi? Magnam eligendi, asperiores illo id ex, quam. Perferendis, voluptate? </div>
+                  </div>
+                </article>
+                <article class="works__item"><a class="works__img" href="#">
+                    <picture>
+                      <source srcset="static/img/work-3.webp" type="image/webp"/><img class="works__pic" src="static/img/work-3.jpg" alt="work" loading="lazy"/>
+                    </picture></a>
+                  <div class="works__body"><a class="works__title" href="#">Designing Dashboards</a>
+                    <div class="works__info"><a class="works__year" href="#">2020</a><a class="works__category" href="#">Dashboard</a></div>
+                    <div class="works__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad architecto quis minus corporis, fugit sapiente vel quidem. Explicabo minus, eaque nisi? Magnam eligendi, asperiores illo id ex, quam. Perferendis, voluptate? </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="footer__body">
+            <div class="footer__social social"><a class="social__item" href="#">
+                <svg class="icon-fb social__icon">
+                  <use xlink:href="static/img/svg/sprite.svg#fb"></use>
+                </svg></a><a class="social__item" href="#">
+                <svg class="icon-insta social__icon">
+                  <use xlink:href="static/img/svg/sprite.svg#insta"></use>
+                </svg></a><a class="social__item" href="#">
+                <svg class="icon-Group social__icon">
+                  <use xlink:href="static/img/svg/sprite.svg#Group"></use>
+                </svg></a><a class="social__item" href="#">
+                <svg class="icon-Linkedin social__icon">
+                  <use xlink:href="static/img/svg/sprite.svg#Linkedin"></use>
+                </svg></a></div>
+            <div class="footer__copy">Copyright (c) 2020 All rights reserved  </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/main.js" type="module"></script>
+  </body>
+</html>

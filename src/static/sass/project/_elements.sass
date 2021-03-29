@@ -5,8 +5,9 @@ body
 	&.lock
 		+phone
 			overflow: hidden
-	//font-family: $font-primary
-$wrapper: 1200
+	font-family: $font-primary
+	color: $txt-primary
+$wrapper: 856
 $wrapperPadding: 20
 
 *,
@@ -24,11 +25,10 @@ h1, h2, h3, h4, h5 h6
 img
 	vertical-align: top
 .wrapper
-	max-width: $wrapper+px
+	max-width: $wrapper+$wrapperPadding*2+px
 	margin: 0 auto
 	height: 100%
-	+r($wrapper)
-		padding: 0 $wrapperPadding+px
+	padding: 0 $wrapperPadding+px
 
 .container
 	height: 100%
@@ -37,6 +37,9 @@ img
 
 .content
 	flex: 1
+	padding: 90px 0 0
+	+r(850)
+		padding: 30px 0 0
 
 .menu
 	&__list
@@ -44,12 +47,20 @@ img
 		+flex
 	&__item
 		margin-left: 30px
+		&.active
+			.menu__link
+				color: $txt-third
 	&__link
 		font-size: 20px
-		color: #fff
+		font-weight: 500
+		color: $txt-primary
 		+smooth
+
 		&:hover
-			color: pink
+			+rmin(767)
+				color: $txt-third
+
+
 .header
 	&__body
 		+flex(space-between, center)
@@ -59,6 +70,8 @@ img
 			left: 100%
 			background-color: #fff
 			z-index: 100
+			padding-top: 0
+
 			&.active
 				left: 0
 			.menu
@@ -70,7 +83,49 @@ img
 				&__link
 					display: block
 					padding: 15px 0
-					color: #000
+
 
 .burger
 	+burger(30, 20, 2, #000)
+
+
+
+
+.button
+	background-color: $button-primary-bg
+	color: $button-primary-txt
+	display: inline-flex
+	border-radius: 2px
+	padding: 15px 20px
+	font-weight: 500
+	font-size: 20px
+	line-height: 1.45
+	+smooth
+	&:hover
+		background-color: darken($button-primary-bg, 5%)
+
+.title
+	font-size: 44px
+	line-height: 60 / 44 * 100%
+	font-weight: 700
+	+phone
+		font-size: 32px
+
+	&-posts
+		font-size: 22px
+
+.text
+	font-size: 16px
+	line-height: 23 / 16 * 100%
+
+
+.social
+	+flex(center, center)
+	&__icon
+		height: 30px
+		width: 30px
+		fill: $txt-primary
+		margin: 0 17px
+		+smooth
+		&:hover
+			fill: $txt-third

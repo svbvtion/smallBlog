@@ -1,0 +1,1 @@
+import{menu}from"./menu.js";window.onload=()=>{menu(".menu-box",".header__menu");document.querySelectorAll(".menu__link").forEach((e=>{e.getAttribute("href")==document.location.pathname&&(console.log("a"),e.closest(".menu__item").classList.add("active"))}))};

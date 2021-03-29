@@ -1,0 +1,57 @@
+.recent
+	&-posts
+		background-color: $bg-secondary
+		padding: 25px 0 30px 0
+
+		&__header
+			+flex(space-between)
+			margin-bottom: 20px
+		&__title
+			flex: 1 1 auto
+			+phone
+				text-align: center
+		&__all
+			flex: 0 0 auto
+			font-size: 16px
+			line-height: 23 / 16 * 100%
+			color: $txt-fourth
+			+phone
+				display: none
+		&__items
+			+flex(space-between)
+			margin: -10px 0 0 -10px
+			+phone
+				flex-direction: column
+		&__column
+			margin: 10px 0 0 10px
+			flex: 0 1 50%
+
+	&-post
+		background-color: $bg-primary
+		box-shadow: 0px 4px 10px rgba($shadow, .25)
+		border-radius: 4px
+		padding: 20px
+		height: 100%
+		+phone
+			padding: 15px
+
+		&__title
+			display: inline-block
+			font-size: 26px
+			line-height: 38 / 26 * 100%
+			font-weight: 700
+			margin-bottom: 17px
+			+smooth
+			&:hover
+				color: $txt-third
+			+phone
+				font-size: 22px
+		&__info
+			margin: 0 0 15px 0
+			font-size: 18px
+			line-height: 26 / 18 * 100%
+
+			span
+				margin: 0 10px
+			+phone
+				font-size: 16px

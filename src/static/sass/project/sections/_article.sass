@@ -1,0 +1,31 @@
+.article
+	&__title
+		font-size: 34px
+		font-weight: 700
+		line-height: 38 / 24 * 100%
+		margin-bottom: 30px
+		+phone
+			font-size: 30px
+	&__info
+		+flex(start, center)
+		margin-bottom: 20px
+	&__year
+		background-color: $red
+		color: $white
+		padding: 5px 10px
+		border-radius: 16px
+		font-weight: 900
+	&__category
+		font-size: 20px
+		margin-left: 25px
+		line-height: 25 / 20 * 100%
+		+phone
+			font-size: 18px
+	&__text
+		p
+			@extend .text
+			margin-bottom: 20px
+		img
+			max-width: 100%
+			display: block
+			margin: 0 auto 20px
